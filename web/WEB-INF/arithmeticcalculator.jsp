@@ -1,6 +1,6 @@
 <%-- 
     Document   : arithmeticcalculator
-    Created on : 26-Jan-2023, 9:08:38 PM
+    Created on : 26-Jan-2023, 9:49:27 PM
     Author     : xbali
 --%>
 
@@ -9,9 +9,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Arithmetic Calculator</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Arithmetic Calculator</h1>
+        <form method="post" action="arithmetic">
+            First: <input type="text" name="firstNum"><br>
+            Second: <input type="text" name="secondNum"><br>
+            <input type="submit" name="submit" value="+">
+            <input type="submit" name="submit" value="-">
+            <input type="submit" name="submit" value="*">
+            <input type="submit" name="submit" value="%">
+            <br>
+            <br>
+            <div>Result: ${showResult}</div>
+        </form>
+        <a href="age">Age Calculator</a>
     </body>
 </html>

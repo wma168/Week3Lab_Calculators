@@ -23,7 +23,7 @@ public class AgeCalculatorrServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        //retrieve values from a form (getParameter)
+ //retrieve values from a form (getParameter)
         String age = request.getParameter("age");
         
         request.setAttribute("age", age);
